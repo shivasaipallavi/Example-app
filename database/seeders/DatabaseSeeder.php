@@ -9,6 +9,8 @@ use App\Models\employee;
 use App\Models\manager;
 
 use App\Models\foodcoupon;
+
+use App\Models\Post;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -31,5 +33,6 @@ class DatabaseSeeder extends Seeder
         $this->call(foodcouponTableSeeder::class);
         $this->call(vehicleTableseeder::class);
         $this->call(UserTableSeeder::class);
+        $this->call(posttableseeder::class);
     }
 }
